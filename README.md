@@ -1,6 +1,6 @@
 # pyambisonic
 
-A set of Python scripts written to decode Ambisonic B-Format audio files into a 5.1 srround sound format. Each stream for the 5 channels is stored in a separate .wav file.
+A set of Python scripts written to decode Ambisonic B-Format audio files into a 5.1 srround sound format. Each stream for the 5 channels is stored in a separate .wav file. Additionally, the 5.1 channel audio is further downmi9zed into stereo using a Head Response Transfer Function (HRTF), to facilitate listening to the output using headphones. The HRTFs were obtained from the CIPC HRTF database (http://interface.cipic.ucdavis.edu/sound/hrtf.html).
 
 Also included is a script (optimizeDecoderCoeffSD.py) which learns the required parameters for decoding the Ambisonics file for any symmetric 5.1 channel layout through an iterative Gradient Descent optimization of fitness functions for low and high frequencies.
 
